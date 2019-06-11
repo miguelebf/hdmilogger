@@ -8,6 +8,7 @@ port=8000
 host='127.0.0.1'
 
 while True:
+
     try:
         with picamera.PiCamera() as camera:
             if camera.start_preview(): 
@@ -24,4 +25,5 @@ while True:
                         connection.close()
                         client_socket.close()
                         continue
- 
+    except:
+        continue
