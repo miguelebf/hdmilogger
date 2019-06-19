@@ -6,7 +6,7 @@ import threading
 # Connect a client socket to my_server:8000 (change my_server to the
 # hostname of your server)
 port=8000
-host='127.0.0.1'
+host='192.168.0.5'
 
 def start_view(camera):
     camera.start_preview():
