@@ -1,9 +1,3 @@
-###############################
-#                             #
-#  Author: Miguel Bustamante  #
-#  Server WBU v 0.1           #
-#                             #
-###############################
 import socket
 import os
 import sys
