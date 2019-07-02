@@ -1,7 +1,6 @@
 #Miguel Bustamante v0.1
 ##Imports
-from subprocess import call
-
+import os
 
 #Functions
 def modifyLine(file,find,replace):
@@ -17,4 +16,4 @@ modifyLine('/home/pi/.config/pcmanfm/LXDE-pi/desktop-items-0.conf','wallpaper_mo
 modifyLine('/home/pi/.config/pcmanfm/LXDE-pi/desktop-items-0.conf','desktop_bg','desktop_bg=#000000000000')
 
 #Reconfigure Pcmanfm
-call('pcmanfm --reconfigure')
+os.system('pcmanfm --reconfigure')
