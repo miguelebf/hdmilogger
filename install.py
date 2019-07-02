@@ -12,5 +12,9 @@ def modifyLine(file,find,replace):
 		f.write('\n'.join(altered_lines) + '\n')
 		f.close()
  
-#Modify  desktop-items-0.conf
+#Modify  desktop-items-0.conf(Modify background to solid black colour)
 modifyLine('/home/pi/.config/pcmanfm/LXDE-pi/desktop-items-0.conf','wallpaper_mode','wallpaper_mode=color')
+modifyLine('/home/pi/.config/pcmanfm/LXDE-pi/desktop-items-0.conf','desktop_bg','desktop_bg=#000000000000')
+
+#Reconfigure Pcmanfm
+call('pcmanfm --reconfigure')
