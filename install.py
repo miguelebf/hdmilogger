@@ -10,7 +10,7 @@ def modifyLine(file,find,replace):
 		altered_lines = [replace if line.split("=")[0]==find else line for line in lines]
 	with open(file, "w") as f:
 		f.write('\n'.join(altered_lines) + '\n')
-            f.close()
+		f.close()
  
 #Modify  desktop-items-0.conf
-modifyLine("~/.config/pcmanfm/LXDE-pi/desktop-items-0.conf","wallpaper_mode","wallpaper_mode=color")
+modifyLine('/home/pi/.config/pcmanfm/LXDE-pi/desktop-items-0.conf','wallpaper_mode','wallpaper_mode=color')
